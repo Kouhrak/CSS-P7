@@ -1,0 +1,137 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* Menu Icon */
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    background-image: url('imagenes/puntos.png');
+    background-size: cover;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#menu.active {
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+/* Image Styles */
+.perfil-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.qr-imagen {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+}
+
+/* Contact Form Styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: inline-block;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav.active ul {
+        display: block;
+    }
+}
